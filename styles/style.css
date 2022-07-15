@@ -3,12 +3,12 @@
     --primary: #9b59b6;
     --primaryDark: #8e44ad;
     --secondary: #f1c40f;
-    --seondaryDark: #f39c12;
+    --secondaryDark: #f39c12;
     --light: #ffffff;
     --dark: #1e272e;
 
 /* Fonts */
-    --primaryFont: font-family: 'Staatliches', cursive;
+    --primaryFont: 'Staatliches', cursive;
 }
 
 html {
@@ -36,7 +36,7 @@ a {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .container {
@@ -64,3 +64,38 @@ h3 {
 /*GLOBAL END/
 
 /*HEADER*/
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    margin: 3rem 0;
+}
+
+/*HEADER END*/
+
+/* NAVBAR Start*/
+
+.navigation {
+    background-color: var(--primaryDark);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navigation__links {
+    color: var(--light);
+    font-family: var(--primaryFont);
+    font-size: 3rem;
+}
+
+.navigation__links--active,
+.navigation__links:hover {
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+/* NAVBAR END*/
