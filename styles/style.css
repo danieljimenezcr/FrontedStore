@@ -61,18 +61,17 @@ h2 {
 h3 {
     font-size: 2.4rem;
 }
-/*GLOBAL END/
+/*---GLOBAL END---*/
 
 /*HEADER*/
 .header {
     display: flex;
     justify-content: center;
 }
-
 .header__logo {
     margin: 3rem 0;
 }
-/*HEADER END*/
+/*---HEADER END---*/
 
 /* NAVBAR Start*/
 .navigation {
@@ -82,7 +81,6 @@ h3 {
     justify-content: center;
     gap: 2rem;
 }
-
 .navigation__links {
     color: var(--light);
     font-family: var(--primaryFont);
@@ -94,18 +92,52 @@ h3 {
     color: var(--secondary);
     cursor: pointer;
 }
-/* NAVBAR END*/
+/* --NAVBAR END--*/
+/* GRID */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    
+}
+/*---GRID END---*/
 
+
+/* PRODUCTS*/
+.product {
+    background-color: var(--primaryDark);
+    padding: 1rem;
+}
+.product__image {
+    width: 100%;
+}
+.product__information {
+
+}
+.product__name{
+
+}
+.product__price{
+
+}
+/*--RODUCTS END--*/
 /* FOOTER START*/
  .footer {
     background-color: var(--primaryDark);
     padding: 1rem 0;
     margin-top: 2rem;
  }
-
  .footer__text {
     text-align: center;
     font-family: var(--primaryFont);
     font-size: 2.2rem;
  }
-/* FOOTER END*/
+/* --FOOTER END--*/
+
+/* MEDIA QUERIES */ 
+@media (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
