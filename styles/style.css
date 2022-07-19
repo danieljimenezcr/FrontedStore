@@ -157,6 +157,23 @@ h3 {
     width: 100%;
 }
 
+/* ABOUT US BLOCKS*/
+
+.blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.block {
+    text-align: center;
+}
+
+.block__title {
+    margin: 0;
+}
+.block__image {
+    width: 100%;
+}
 /* FOOTER START*/
  .footer {
     background-color: var(--primaryDark);
@@ -187,5 +204,8 @@ h3 {
     .about__img {
         grid-column: 2 / 3;
     }
-
+    .blocks {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
